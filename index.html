@@ -1,0 +1,30 @@
+<head> 
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head> 
+<body> 
+  <div id="all">
+  <h2> Color changer </h2> 
+  <button>Change me </button> 
+</div> 
+  <script> 
+const button = document.querySelector('button')
+const body = document.querySelector('body')
+const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', 'black', 'white', 'purple']
+
+body.style.backgroundColor = 'brown'
+button.addEventListener('click', changeBackground)
+
+function changeBackground(){
+const colorIndex= parseInt(Math.random()*colors.length+1)
+body.style.backgroundColor = colors[colorIndex]
+}
+</script> 
+  
+  
+  
+  
+
+
+
+</body> 
